@@ -1,5 +1,5 @@
 h1{
-  font-size: 45px;
+  font-size: 25px;
   font-style: oblique;
   font-family: sans-serif;
 }
@@ -20,4 +20,7 @@ form{
   color:rgb(255,200,255);
   border: solid .5px white;
   border-radius: 10px;
+}
+#link {
+    background-color: blue;
 }
