@@ -22,7 +22,7 @@ p {
 
 li{
   display: block;
-
+font-family: "Montserrat";
   margin-right: auto;
   width: 50%;
 
@@ -54,7 +54,7 @@ h2{
 
 }
 
-#music{
+.music{
   border: 8px solid #519789;
   border-radius: 25px;
   display: block;
@@ -79,7 +79,7 @@ h2{
   font-family: "Montserrat Subrayada";
 }
 
-#paragraphs{
+.paragraphs{
   display: block;
   margin-left: auto;
   margin-right: auto;
