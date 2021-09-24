@@ -1,0 +1,87 @@
+body{
+
+
+
+  font-weight: 500;
+  border: solid rgb(100,100,100) 1px;
+  background-color: #FEFAFB;
+}
+
+
+p {
+  font-family: "Montserrat";
+  color: rgb(100,100,100);
+
+  display: block;
+  margin-left: 1vw;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+
+li{
+  display: block;
+
+  margin-right: auto;
+  width: 50%;
+
+}
+
+h1{
+  font-family: "Montserrat Subrayada";
+  color: #519789;
+  border: 15px double #519789;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 25px;
+  text-align: center;
+
+}
+
+h2{
+  font-family: "Montserrat Subrayada";
+  color: #519789;
+  border: 15px double #519789;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 25px;
+  text-align: center;
+
+}
+
+#music{
+  border: 8px solid #519789;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#grantpic{
+  width: 20vw;
+  border: 15px double #519789;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 25px;
+}
+}
+
+#title{
+  border: solid rgb(100,100,100) 1px;
+  font-family: "Montserrat Subrayada";
+}
+
+#paragraphs{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
