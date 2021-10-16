@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quote Machine</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  </head>
+  <body>
+    <section>
+      <h1 id="qtext">Welcome to the scary existential quote machine</h1>
+<button id="qbutton">New Quote</button>
+    </section>
+
+    <script>
+    const quotes = ["Don't depend on anyone in this world, because even your shadow leaves you when you're in darkness.", "Maybe this world is another planet's hell.", "In war, it doesn't matter who's right, but who's left.","Stare long enough into the abyss and the abyss will stare into you.","Be afraid. Be very afraid."];
+    quoteCount = 0;
+    document.getElementById('qbutton').addEventListener("click", newQuote);
+    function newQuote(){
+      document.getElementById("qtext").innerHTML = quotes[quoteCount];
+
+      if(quoteCount>=(quotes.length-1)){
+        quoteCount = 0;
+      }else{
+        quoteCount +=1;
+      }
+    }
+
+  </script>
+
+  </body>
+</html>
