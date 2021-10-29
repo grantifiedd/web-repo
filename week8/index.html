@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quote Machine</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
+  </head>
+  <body>
+    <section id=header>
+      <hr>
+      <h1>Artistic Intention Setter</h1>
+      <button id="resetButton">reset</button>
+      <button id="generateButton">generate</button>
+      <br> <br>
+
+    </section>
+
+    <section >
+      <h2 class="blink"><span id='month'></span> <span id='date'></span> <span id='year'></span>.</h2>
+      <h3>create your day. generate a 100% random image and word to inspire you. an intention to guide you...</h3>
+      <h4 id=qtext></h4>
+      <div id="result" align="center"> </div>
+    </section>
+
+    <script>
+
+
+    const m = new Date();
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    document.getElementById("month").innerHTML = months[m.getMonth()];
+
+    const d = new Date();
+    document.getElementById("date").innerHTML = d.getDate();
+
+    const y = new Date();
+    document.getElementById("year").innerHTML = y.getFullYear();
+
+    const quotes = ["artistic", "spontaneous", "innovative", "irrational", "dangerous", "charismatic", "ridiculous", "archaic", "purposeful"];
+    quoteCount = 0;
+    document.getElementById('generateButton').addEventListener("click", generator);
+    document.getElementById('resetButton').addEventListener("click", reset);
+
+    function reset(){
+      document.getElementById("qtext").innerHTML = "";
+      document.getElementById("result").innerHTML = "";
+    }
+
+    function generator(){
+      //quote part
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById("qtext").innerHTML = quotes[random];
+
+      if(quoteCount>=(quotes.length-1)){
+        quoteCount = 0;
+      }else{
+        quoteCount +=1;
+      }
+
+      //image generator
+      var randomImage = new Array();
+      randomImage[0] = "https://66.media.tumblr.com/a4c13c4f4220502c3d4fff29883f8d68/tumblr_mjifofO0mg1rvnw08o1_500.jpg";
+      randomImage[1] = "https://66.media.tumblr.com/388a5a5e76d186d3f843924e7fa24704/tumblr_o2auv3vBgt1qddxjwo1_1280.jpg";
+      randomImage[2] = "https://66.media.tumblr.com/413e085908a47c5c96330184cb3b0a0d/tumblr_n56a8nBiwq1tyxb0do1_400.gif";
+      randomImage[3] = "https://66.media.tumblr.com/59a7832fe5a43b1ed098c22d2434ad18/tumblr_neod3aDTWf1ts8v9no1_1280.jpg";
+      randomImage[4] = "https://66.media.tumblr.com/6f03a1ec7f3171a62cd6f5e8748b40e1/tumblr_pd6ow7GXMp1rclv0wo1_540.jpg";
+      randomImage[5] = "https://66.media.tumblr.com/25253dab5f7e8935d4dc4715cf0665dc/tumblr_oz9whwsEPJ1qd2yqto1_1280.jpg";
+      randomImage[6] = "https://66.media.tumblr.com/7af70ceca837742ee8015f638fcfc763/tumblr_oxvlujuPEM1rxrwjfo1_1280.jpg";
+      randomImage[7] = "https://66.media.tumblr.com/6dc9d6db98d48d50b0dcee059d235a65/tumblr_ou0p61zx9Q1ujqjcjo1_1280.jpg";
+      randomImage[8] = "https://66.media.tumblr.com/04be8aa914c052eaf87a067097693a70/tumblr_nzf8cqPQPU1qd2yqto1_1280.jpg";
+      randomImage[9] = "https://66.media.tumblr.com/faf90546f5b2c0198ff4c7f0889b13f4/tumblr_nopldbFQgs1qzqwamo1_1280.jpg";
+      randomImage[10] = "https://66.media.tumblr.com/1614d8e303574e1fd3251693e97df59f/tumblr_o4k31nlmuO1sld6dyo1_1280.jpg";
+      randomImage[11] = "https://66.media.tumblr.com/ca8931c8c1003f8aedee7cf875f60604/tumblr_odpjeiApJX1rkeiwoo1_1280.jpg";
+      randomImage[12] = "https://66.media.tumblr.com/ba11c7dff6d51e051dc0980f5e827840/tumblr_oudy18qvyN1rctae8o1_640.jpg";
+      var number = Math.floor(Math.random()*randomImage.length);
+
+      return document.getElementById("result").innerHTML = '<img src="'+randomImage[number]+'" />';
+    }
+
+
+
+
+    </script>
+
+  </body>
+</html>

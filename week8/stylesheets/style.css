@@ -1,0 +1,92 @@
+.blink {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: #9D1529;
+  }
+  50% {
+    color: #363756;
+  }
+
+  100%{
+    color: #9D1529;
+  }
+}
+
+body{
+  background-color: #E4DCD7;
+}
+hr{
+  border: 10px solid black;
+  border-color: #9D1529;
+border-radius: 5px;
+margin-top: 2vw;
+}
+
+#scaler{
+  width: 1vw;
+}
+
+h1{
+  font-family: "Cousine";
+  font-size: 4vw;
+  margin-left: 2vw;
+  color: #9D1529;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+h2{
+    font-family: "Cousine";
+    font-size: 1.5vw;
+    margin-left: 3vw;
+}
+h2{
+    font-family: "Roboto";
+        margin-left: 3vw;
+}
+h3{
+    font-family: "Roboto";
+        margin-left: 3vw;
+}
+h4{
+    font-family: "Roboto";
+        margin-left: 3vw;
+        color: #9D1529;
+}
+
+#result{
+  float: left;
+  margin-left: 3vw;
+}
+
+#result img{
+  width: 30vw;
+}
+
+button{
+  padding: .5vw;
+  height: 5vh;
+  font-size: 15px;
+  font-family: "Cousine";
+  text-align: center;
+  margin-left: 2vw;
+  background-color: #D1B5CA;
+  color: #363756;
+  border-radius: 2px;
+  border: 5px solid black;
+  border-color: #363756;
+
+}
+
+button:hover{
+
+
+  color: #9D1529;
+}
+
+button:active{
+  background-color: #363756;
+  color: #E5DBD9;
+}
