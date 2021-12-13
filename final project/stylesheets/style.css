@@ -1,3 +1,6 @@
+img{
+  width: 100%;
+}
 .grid-item-1{
   grid-area: column1;
   text-align: right;
@@ -16,14 +19,14 @@
 
 
 .grid-container{
-  width: 80%;
+
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: 3fr 1fr 4fr 1fr;
   gap: 10px;
-  grid-template-areas:
-  "column1 column2 column3 column4";
+  grid-template-areas: "column1 column2 column3 column4";
   margin-top: 5vw;
 }
+
 
 a {
   /* unvisited link */
@@ -63,18 +66,36 @@ h1 {
 }
 
 #point{
-margin-top: 20vw;
+margin-top: 100px;
 width:15vw;
 float: left;
 margin-right: 20vw;
+margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+.grid-container{
+  display: block;
+}
+.grid-item-1{
+  font-size: 20px;
+}
+.grid-item-2{
+  text-align: right;
+}
+
+#point{
+  margin-top: 20px;
+}
+
 }
 
 #grant{
-width:20vw;
+
 }
 
-#grantsad{
-  width:20vw;
+.grantsad{
+
 }
 
 button{
