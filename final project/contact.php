@@ -16,21 +16,38 @@
             <ul>
               <li><a href="index.html">home</a></li>
               <li><a href="uiux.html">ui/ux</a></li>
-              <li><a href="textile.html">textile</a></li>
-                <li><a href="digital.html">digital</a></li>
+                            <li><a href="textile.html">textile</a></li>
+              <li><a href="digital.html">digital</a></li>
               <li><a href="writing.html">writing</a></li>
               <li><a href="contact.html">contact</a></li>
                 <li><a href="https://www.instagram.com/grantified/">instagram</a></li>
             </ul>
           </div>
           <div class="grid-item-2">
-            <h1>ui/ux</h1>
+            <h1>contact</h1>
             <ul>
-              <li><a href="mlh.html"></a></li>
+
             </ul>
           </div>
           <div class="grid-item-3">
 <img class= "grantsad" src="assets/topbar.png"/>
+<div class="container">
+  <form id="form action=”mailto:predictablygrant@gmail.com">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="submit">
+
+  </form>
+</div>
           </div>
           <div class="grid-item-4">
               <img id= "point" src="assets/point.png"/>
