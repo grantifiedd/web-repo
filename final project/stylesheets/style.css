@@ -1,0 +1,129 @@
+.grid-item-1{
+  grid-area: column1;
+  text-align: right;
+}
+
+.grid-item-2{
+  grid-area: column2;
+}
+.grid-item-3{
+  grid-area: column3;
+}
+
+.grid-item-4{
+  grid-area: column4;
+}
+
+
+.grid-container{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  grid-template-areas:
+  "column1 column2 column3 column4";
+  margin-top: 5vw;
+}
+
+a {
+  /* unvisited link */
+  color: black;
+  text-decoration: none;
+
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+h1 {
+  font-family: "Roboto";
+  color: black;
+}
+
+#point{
+margin-top: 20vw;
+width:15vw;
+float: left;
+margin-right: 20vw;
+}
+
+#grant{
+width:20vw;
+}
+
+#grantsad{
+  width:20vw;
+}
+
+button{
+
+  padding: 10px 50px;
+  font-family: "Source Code Pro";
+
+
+  font-size: 30px;
+  background-color: #EF6461;
+  color: black;
+  border-radius: 10px;
+  border: black;
+}
+
+button:hover{
+  border: 2px white solid;
+}
+
+button:active{
+  background-color: #665c5b;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+border-color: black;
+
+input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#form {
+  font-family: "Roboto";
+  color: black;
+}
